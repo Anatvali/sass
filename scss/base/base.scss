@@ -1,0 +1,35 @@
+@import '../module/private.scss';
+@import '../module/mixins.scss';
+@import '../module/variable.scss';
+
+
+
+
+
+
+header {
+@extend %padding-20px;
+	.main-container {
+	   .flex {
+	   @include display(flex);
+	   @include flex(center, space-between);
+	   }
+	   .logo {
+	       font-size:$font-size01; 
+        }
+        .nav {
+           .nav-ul {
+                .nav-li {
+                  font-size:$font-size02;
+                }
+            }
+        }
+        img {
+            width: $img-width;
+        }
+        .load-btn {
+            padding: $padding-btn;
+        }
+	}
+}
+
